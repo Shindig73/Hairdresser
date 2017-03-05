@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar color="bg">
+    <ion-title class="caps"><b color="side">
+      Add Your Appointment</b>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding style="background-color: #D8B3AB" class="bg1">
+    <ion-list color="side">
+ 
+      <ion-item color="side">
+        <ion-label floating color="bg" >Title</ion-label>
+        <ion-input type="text" [(ngModel)]="title"></ion-input>
+      </ion-item>
+ 
+
+  <ion-item color="side">
+    <ion-label  color="bg" floating>Choose your Stylist </ion-label>
+    <ion-select  [(ngModel)]="stylist">
+      <ion-option color="bg" value="mary">Mary</ion-option>
+      <ion-option color="bg" value="linda">Linda</ion-option>
+      <ion-option color="bg" value="martin">Martin</ion-option>
+      <ion-option color="bg" value="cathy">Cathy</ion-option>
+    </ion-select>
+  </ion-item>
+  
+      <ion-item color="side">
+      <ion-label floating color="bg">Start Date</ion-label>
+      <ion-datetime  color="bg" displayFormat="MMM DD YYYY" [(ngModel)]="today"></ion-datetime>
+    </ion-item>
+	
+	    <ion-item color="side">
+      <ion-label floating color="bg">Start Time</ion-label>
+      <ion-datetime  color="bg" displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="appTime"></ion-datetime>
+    </ion-item>
+  
+      <ion-item color="side">
+        <ion-label floating color="bg">Description</ion-label>
+        <ion-input type="text" [(ngModel)]="description"></ion-input>
+      </ion-item>
+ 
+    </ion-list>
+ 
+    <button full ion-button color="bg" (click)="saveItem()">Save</button> 
+ 
+</ion-content>

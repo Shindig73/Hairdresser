@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="bg">
+    <ion-title class="caps"><b color="side">
+      Your Appointments</b>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding style="background-color: #D8B3AB" class="bg1">
+<br><br>
+<button ion-button full round color="side" (click)="addItem()">
+<b color="bg" class="caps">Make your Appointment</b></button>
+<br><br>
+  <ion-list color="side" >
+    <ion-item color="side"  *ngFor="let item of items" (click)="viewItem(item)">{{item.title}}</ion-item>
+  </ion-list>
+</ion-content>

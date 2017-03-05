@@ -1,0 +1,35 @@
+
+
+<ion-content padding class="bg">
+
+<br><br><ion-card color="bg"><ion-card-header class="head"> 
+	<strong color="side">Your Salon Name</strong></ion-card-header></ion-card><br><br>
+
+
+<ion-row>
+	<ion-col width-33></ion-col>
+	<ion-col width-66>
+		<button ion-button full round color="side"><b color="bg" class="caps">About Us</b></button>
+		<button ion-button full round color="side" (click)="goToPrice()"><b color="bg" class="caps">Prices</b></button>
+		<button ion-button full round color="side" (click)="goToServices()"><b color="bg" class="caps">Services</b></button>
+		<button ion-button full round color="side" (click)="goToGallery()"><b color="bg" class="caps">Gallery</b></button>
+		<button ion-button full round color="side" (click)="goToAppoint()"><b color="bg" class="caps">Appointment</b></button>
+		<button ion-button full round color="side" (click)="goToTeam()"><b color="bg" class="caps">Meet our Team</b></button>
+		<button ion-button full round color="side" (click)="goToOpening()"><b color="bg" class="caps">Opening Hours</b></button>
+		<button ion-button full round color="side" (click)="goToContact()"><b color="bg" class="caps">Contact Us</b></button>
+	</ion-col>
+</ion-row>
+
+<ion-fab left bottom>
+    <a href="tel:06671717"><button ion-fab mini color="side">
+		<ion-icon name="call" color="bg"></ion-icon></button></a>
+</ion-fab>
+<ion-fab center bottom>
+    <a href="mailto:admin@myemail.com"><button ion-fab mini color="side">
+		<ion-icon name="mail" color="bg"></ion-icon></button></a>
+</ion-fab>
+<ion-fab right bottom>
+    <a href="http://www.facebook.com"><button ion-fab mini color="side">
+		<ion-icon name="logo-facebook" color="bg"></ion-icon></button></a>
+</ion-fab>
+</ion-content>

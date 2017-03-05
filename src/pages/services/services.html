@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="bg">
+    <ion-title class="caps"><b color="side">
+      Services</b>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background-color: #D8B3AB" class="bg1">
+<ion-card>
+<ion-list>
+	<button ion-item  color="side" 
+		*ngFor="let item of items" (click)="getItem(item)">
+			<h2 color="bg"  style="text-align:left" >{{item.service}}</h2 >
+			<p color="bg" style="text-align:left" >{{item.desc}}</p>
+	</button>
+</ion-list>
+
+
+</ion-card>
+</ion-content>
+

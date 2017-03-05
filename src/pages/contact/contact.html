@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar color="bg">
+    <ion-title class="caps"><b color="side">
+      Contact Us</b>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background-color: #D8B3AB" class="bg1">
+<br><br>
+<ion-list>
+	<ion-item color="side">
+		<ion-avatar item-left>
+			<ion-icon name="call" color="bg"></ion-icon>
+		</ion-avatar>
+		<h2 color="bg"><b>Call Us</b></h2>
+		<p color="side"> <a href="tel:0667171717" color="bg" class="sty">066-7171717</a></p>
+	</ion-item>
+	
+	<ion-item color="side">
+		<ion-avatar item-left>
+			<ion-icon name="mail" color="bg"></ion-icon>
+		</ion-avatar>
+		<h2 color="bg"><b>Email Us</b></h2>
+		<p color="bg"> <a href="mailto:me@myemail.com" color="bg" class="sty">admin@myemail.com</a></p>
+	</ion-item>
+		
+	<ion-item color="side">
+		<ion-avatar item-left>
+			<ion-icon name="mail" color="bg"></ion-icon>
+		</ion-avatar>
+		<h2 color="bg"><b>Where we are</b></h2>
+		<p color="bg"> Street Name 1<br>Street Name 2<br>Town<br>Co. Kerry</p>
+	</ion-item>
+	
+	
+	<ion-item color="side">
+		<ion-avatar item-left>
+			<ion-icon name="logo-facebook" color="bg"></ion-icon>
+		</ion-avatar>
+		<h2 color="bg">Find Us on Facebook</h2>
+		<p color="bg"> <a href="http://wwww.facebook.com" color="bg" class="sty">facebook.com</a></p>
+	</ion-item>
+</ion-list>
+<br>
+<button ion-button full color="side" (click)="fbShare()">
+	<ion-icon name="logo-facebook" color="bg">&nbsp;&nbsp;Share us on Facebook</ion-icon></button>
+<br>
+<button ion-button full color="side"><ion-icon name="logo-twitter" color="bg">&nbsp;&nbsp;Share us on Twitter</ion-icon></button>
+
+
+
+<ion-fab left bottom>
+    <a href="tel:0667171717"><button ion-fab mini color="bg">
+		<ion-icon name="call" color="side"></ion-icon></button></a>
+</ion-fab>
+<ion-fab center bottom>
+    <a href="mailto:admin@myemail.com"><button ion-fab mini color="bg">
+		<ion-icon name="mail" color="side"></ion-icon></button></a>
+</ion-fab>
+<ion-fab right bottom>
+    <a href="http://www.facebook.com"><button ion-fab mini color="bg">
+		<ion-icon name="logo-facebook" color="side"></ion-icon></button></a>
+</ion-fab>
+</ion-content>
